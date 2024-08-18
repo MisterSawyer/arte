@@ -1,0 +1,17 @@
+id: 0
+name: val
+---
+id: 1
+name: pitch
+---
+id: 2
+name: time
+---
+id: 3
+name: note
+---
+id: 4
+name: chord
+---
+id: 5
+name: major_scale

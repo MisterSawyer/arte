@@ -1,0 +1,8 @@
+[Bb]uild/
+[Bb]uilds/
+[Ll]og/
+[Ll]ogs/
+[Oo]utput/
+[Oo]utputs/
+.vscode/
+__pycache__
