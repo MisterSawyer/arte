@@ -1,6 +1,5 @@
 #pragma once
 
-namespace arte::native
-{
+namespace arte::native {
 
 }

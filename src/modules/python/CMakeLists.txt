@@ -30,8 +30,6 @@ PUBLIC
 
 target_link_libraries("${MODULE_NAME}" 
 PUBLIC
-    OpenSSL::SSL
-    OpenSSL::Crypto
     Python3::Python
 
 PRIVATE 

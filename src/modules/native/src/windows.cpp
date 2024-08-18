@@ -1,6 +1,5 @@
 #include <native.h>
 
-namespace arte::native
-{
+namespace arte::native {
 
 }

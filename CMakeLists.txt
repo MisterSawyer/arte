@@ -27,9 +27,6 @@ message(STATUS "[${PROJECT_NAME}] initializing `asio` ...")
 FetchContent_MakeAvailable(asio)
 message(STATUS "initialized `asio` from ${asio_SOURCE_DIR} to ${asio_BINARY_DIR}")
 
-#initialize openssl
-find_package(OpenSSL REQUIRED)
-
 # initialize arte
 set(PUBLIC_HEADERS_LIST "include/arte.h")
 add_executable("${PROJECT_NAME}" "${PROJECT_SOURCE_DIR}/src/main.cpp")

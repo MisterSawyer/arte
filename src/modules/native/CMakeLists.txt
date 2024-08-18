@@ -28,8 +28,21 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Linux")
       "src/linux.cpp"
   )
   target_include_directories("${MODULE_NAME}" PUBLIC "linux")
+
+
+    #initialize openssl
+    find_package(OpenSSL REQUIRED)
+
   set(ZLIB_USE_STATIC_LIBS "ON")
-  target_link_libraries("${MODULE_NAME}" PUBLIC expat z)
+  target_link_libraries("${MODULE_NAME}" 
+    PUBLIC  
+        OpenSSL::SSL
+        OpenSSL::Crypto
+        expat
+        z
+    PRIVATE
+        arte::native 
+    )
 endif()
 
 add_library("${PROJECT_NAME}::${MODULE_SHORT_NAME}" ALIAS "${MODULE_NAME}")
